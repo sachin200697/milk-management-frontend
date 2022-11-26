@@ -2,7 +2,7 @@ import axios from 'axios';
 
 function App() {
 	const apiCall = async () => {
-		const response = await axios.get('http://localhost:8000/milk/user/');
+		const response = await axios.get('/milk/user/');
 		console.log(response.data);
 	};
 	apiCall();
